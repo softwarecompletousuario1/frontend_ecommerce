@@ -11,8 +11,8 @@ import image from '@astrojs/image'
 import { manifest, seoConfig } from "./utils/seoConfig"
 
 export default defineConfig({
-	
 	site: seoConfig.baseURL,
+	output: 'hybrid',
 	integrations: [
 		tailwind({
 			config: {
