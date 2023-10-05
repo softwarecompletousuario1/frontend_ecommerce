@@ -5,15 +5,13 @@ import tailwind from "@astrojs/tailwind"
 import sitemap from "@astrojs/sitemap"
 import compress from "astro-compress"
 import { VitePWA } from "vite-plugin-pwa"
-// import image from '@astrojs/image'
+import image from '@astrojs/image'
 
 // Helper imports
 import { manifest, seoConfig } from "./utils/seoConfig"
 
 export default defineConfig({
-	experimental: {
-		assets: true
-	  },
+	
 	site: seoConfig.baseURL,
 	integrations: [
 		tailwind({
@@ -23,9 +21,9 @@ export default defineConfig({
 			}
 		}),
 		sitemap(),
-		// image({
-		// 	serviceEntryPoint: '@astrojs/image',
-		//   }),
+		image({
+			serviceEntryPoint: '@astrojs/image/sharp',
+		  }),
 		compress()
 	],
 	vite: {
