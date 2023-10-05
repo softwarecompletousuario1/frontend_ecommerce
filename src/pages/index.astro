@@ -5,6 +5,13 @@ import Footer from "../components/global/Footer/Footer.astro";
 import Navbar from "../components/global/Header/Header.astro";
 import "../styles/pages/index.css";
 
+// importando sliders
+import HomeSlider1 from "@component/global/home_slider_1.astro";
+import HomeSlider2 from "@component/global/home_slider_2.astro";
+import HomeSlider3 from "@component/global/home_slider_3.astro";
+import HomeSlider4 from "@component/global/home_slider_4.astro";
+import HomeSlider5 from "@component/global/home_slider_5.astro";
+
 ---
 
 
@@ -12,11 +19,21 @@ import "../styles/pages/index.css";
 	<Navbar/>
 	<div class="body_content">
         <div class="sliders">
-            <div class="div_slide color_1">Slide 1</div>
-            <div class="div_slide color_2">Slide 2</div>
-            <div class="div_slide color_1">Slide 3</div>
-            <div class="div_slide color_2">Slide 4</div>
-            <div class="div_slide color_1">Slide 5</div>
+            <div class="div_slide color_1">
+				<HomeSlider1/>
+			</div>
+            <div class="div_slide color_2">
+				<HomeSlider2/>
+			</div>
+            <div class="div_slide color_1">
+				<HomeSlider3/>
+			</div>
+            <div class="div_slide color_2">
+				<HomeSlider4/>
+			</div>
+            <div class="div_slide color_1">
+				<HomeSlider5/>
+			</div>
         </div>
     </div>
 </Layout>
