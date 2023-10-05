@@ -2,21 +2,24 @@
 // Component imports
 import { Layout } from "@globals"
 import Footer from "../components/global/Footer/Footer.astro";
-import Navbar from "../components/global/Header/Header.astro";
+// Navbar de escritorio
+import Navbar from "../components/global/Header/navbarescritorio.astro";
+//  Navbar de movil
+
 import "../styles/pages/index.css";
 
 // importando sliders
-import HomeSlider1 from "@component/global/home_slider_1.astro";
-import HomeSlider2 from "@component/global/home_slider_2.astro";
-import HomeSlider3 from "@component/global/home_slider_3.astro";
-import HomeSlider4 from "@component/global/home_slider_4.astro";
-import HomeSlider5 from "@component/global/home_slider_5.astro";
+import HomeSlider1 from "@component/global/home/home_slider_1.astro";
+import HomeSlider2 from "@component/global/home/home_slider_2.astro";
+import HomeSlider3 from "@component/global/home/home_slider_3.astro";
+import HomeSlider4 from "@component/global/home/home_slider_4.astro";
+import HomeSlider5 from "@component/global/home/home_slider_5.astro";
 
 ---
 
 
 <Layout title="softwarecompleto.com">
-	<Navbar/>
+	<Navbar />
 	<div class="body_content">
         <div class="sliders">
             <div class="div_slide color_1">

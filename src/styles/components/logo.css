@@ -1,0 +1,12 @@
+@import '../colors.css';
+
+.content_logo{
+    width: 25%;
+    height: 100%;
+    background-color: red;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
