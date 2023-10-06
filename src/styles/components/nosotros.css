@@ -27,3 +27,10 @@
     text-decoration: underline;
     user-select: none;
 }
+
+.div_nosotros_desplegable{
+    display: none;
+}
+.div_categorias_texto:hover .div_nosotros_desplegable{
+    display: flex; 
+}

@@ -3,6 +3,7 @@ import '../../../styles/components/nosotros.css';
 import IconNosotros from '../icons/icon_nosotros.astro';
 ---
 <div class="content_nosotros">
+    <div class="div_categorias_texto">
     <div class="div_nosotros">
         <div>
             Nosotros
@@ -11,4 +12,19 @@ import IconNosotros from '../icons/icon_nosotros.astro';
             <IconNosotros/>
         </div>        
     </div>   
+    <!-- Menú desplegable -->
+    <div class="div_nosotros_desplegable">   
+        <div class="origin-top-right absolute w-80 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5" role="menu" aria-orientation="vertical" tabindex="-1">
+          <div class="py-1" role="none">
+            <!-- Categorías -->
+            <a href="/" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">
+                Conoce nuestra empresa</a>
+            <a href="/" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">
+                Conoce nuestro trabajo</a>
+            <a href="/" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">
+                Conoce los canales de comunicación</a>
+          </div>
+        </div>
+      </div>
+    </div>
 </div>
