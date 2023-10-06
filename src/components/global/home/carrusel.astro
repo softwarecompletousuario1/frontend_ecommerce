@@ -1,13 +1,30 @@
 ---
 import { Image } from '@astrojs/image/components';
-
-const formato = "webp";
 const imagenes = [ 
   "https://res.cloudinary.com/unidigital/image/upload/v1696605197/software%20completo/promo_isfjtt.png",
+  "https://http2.mlstatic.com/D_NQ_827915-MLA72037073590_102023-OO.webp",
+  "https://http2.mlstatic.com/D_NQ_741936-MLA72003433921_092023-OO.webp",
+  "https://http2.mlstatic.com/D_NQ_612942-MLA71945575734_092023-OO.webp",
+  "https://http2.mlstatic.com/D_NQ_885299-MLA71946536612_092023-OO.webp",
+  "https://http2.mlstatic.com/D_NQ_741936-MLA72003433921_092023-OO.webp",
+  "https://http2.mlstatic.com/D_NQ_741936-MLA72003433921_092023-OO.webp",
+  "https://res.cloudinary.com/unidigital/image/upload/v1696605197/software%20completo/promo_isfjtt.png",
+  "https://http2.mlstatic.com/D_NQ_827915-MLA72037073590_102023-OO.webp",
+  "https://http2.mlstatic.com/D_NQ_741936-MLA72003433921_092023-OO.webp",
 ];
 
+let miVariable = 0;
 
+function cambiarVariableAleatoriamente() {
+  let numeroAleatorio = Math.random();
+  let valorAleatorio = Math.floor(numeroAleatorio * imagenes.length)+1;
+  console.log(valorAleatorio);
+  
+
+  miVariable = valorAleatorio;
+};
+cambiarVariableAleatoriamente();
 ---
+            <Image src={imagenes[miVariable]} id="miImagen" alt={"Imagen del carrusel"} width={1600} height={340}  format={"webp"} fallbackFormat={"jpg"} preload="webp" loading="auto" decoding="auto"/>
 
 
-            <Image src={imagenes[0]} alt={"Imagen del carrusel"} width={1600} height={340}  format={"webp"} fallbackFormat={"jpg"} preload="webp" loading="auto"/>
