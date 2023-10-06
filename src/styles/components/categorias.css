@@ -11,8 +11,10 @@
     font-size: 18px;
     font-weight: 550;
 }
-.div_categorias_texto:hover{
+.content_categorias:hover{
     background-color: var(--color-6);
+}
+.div_categorias_texto:hover{    
     cursor: pointer;
     font-weight: 600;
     text-decoration: underline;
@@ -21,7 +23,6 @@
 .div_categorias_desplegable{
     display: none;
 }
-
 .div_categorias_texto:hover .div_categorias_desplegable {
     display: flex; 
 }

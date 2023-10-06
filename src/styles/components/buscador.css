@@ -3,8 +3,14 @@
 .content_buscador{
     width: 25%;
     height: 100%;
-    background-color: orange;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.div_buscador{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }

@@ -3,8 +3,27 @@
 .content_fotosvideos{
     width: 15%;
     height: 100%;
-    background-color:aqua;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.content_fotosvideos:hover{
+    background-color: var(--color-6);
+}
+.div_fotosvideos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+    font-family: var(--font-navbar);
+    font-size: 18px;
+    font-weight: 550;
+}
+
+.div_fotosvideos:hover{    
+    cursor: pointer;
+    font-weight: 600;
+    text-decoration: underline;
+    user-select: none;
 }
