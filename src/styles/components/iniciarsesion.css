@@ -3,8 +3,27 @@
 .content_iniciarsesion{
     width: 15%;
     height: 100%;
-    background-color:cadetblue;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.content_iniciarsesion:hover{
+    background-color: var(--color-6);
+}
+.div_iniciarsesion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+    font-family: var(--font-navbar);
+    font-size: 18px;
+    font-weight: 550;
+}
+
+.div_iniciarsesion:hover{    
+    cursor: pointer;
+    font-weight: 600;
+    text-decoration: underline;
+    user-select: none;
 }
