@@ -7,6 +7,9 @@
     align-items: center;
     justify-content: center;
 }
+.content_buscador:hover{
+    background-color: var(--color-6);
+}
 .div_buscador{
     display: flex;
     flex-direction: row;
