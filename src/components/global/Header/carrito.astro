@@ -1,6 +1,29 @@
 ---
 import '../../../styles/components/carrito.css';
+import IconCarrito from '../icons/icon_carrito_car.astro';
+const contador_carrito = 0;
 ---
 <div class="content_carrito">
-    Car
+    <div class="div_carrito">
+        {contador_carrito >= 1 ?
+        (
+        <a href="/">
+            <div class="div_carrito_contador">
+                <div class="div_carrito_contador_numero">
+                    {contador_carrito}
+                    </div>          
+                
+            </div> <div class="div_carrito_car">
+                <IconCarrito/>
+            </div>
+        </a>
+        ):
+        (
+        <a href="/"> 
+            <div><IconCarrito/></div>
+        </a>
+        )    
+        }       
+        
+    </div>
 </div>

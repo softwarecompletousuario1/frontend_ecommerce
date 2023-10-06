@@ -3,8 +3,43 @@
 .content_carrito{
     width: 10%;
     height: 100%;
-    background-color: red;
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+.content_carrito:hover{
+    background-color: var(--color-6);
+}
+.div_carrito{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.div_carrito_contador{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.div_carrito_contador_numero{
+    background-color: var(--color-6);
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 50%;
+    font-family: var(--font-navbar);
+    font-size: 14px;
+    font-weight: 500;
+}
+.div_carrito_car{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: flex-start;
     justify-content: center;
 }
