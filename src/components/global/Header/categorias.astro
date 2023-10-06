@@ -1,8 +1,24 @@
 ---
 import '../../../styles/components/categorias.css';
+import IconCategorias from '../icons/categorias_down_icon.astro'
 ---
 <div class="content_categorias">
     <div class="div_categorias_texto">
-        Categorias
+        <div class="div_categorias_direccion">
+            <div>   
+                Categorías
+            </div>
+            <div>
+                <IconCategorias/>
+            </div>
+        </div>
+        <div class="div_categorias_desplegable">   
+            <div class="origin-top-right absolute   w-80 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5" role="menu" aria-orientation="vertical" tabindex="-1">
+              <div class="py-1" role="none">
+                <!-- Categorías -->
+                <a href="/" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Categoría 1 sadfasdasdsadsadsad asdasdsad d</a>
+              </div>
+            </div>
+          </div>
     </div>    
 </div>

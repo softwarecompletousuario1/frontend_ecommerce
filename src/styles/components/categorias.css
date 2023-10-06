@@ -18,3 +18,17 @@
     text-decoration: underline;
     user-select: none;
 }
+.div_categorias_desplegable{
+    display: none;
+}
+
+.div_categorias_texto:hover .div_categorias_desplegable {
+    display: flex; 
+}
+.div_categorias_direccion{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
