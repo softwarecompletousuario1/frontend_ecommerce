@@ -16,6 +16,7 @@
 		"@typescript-eslint/parser": "^6.7.4",
 		"astro": "^2.10.9",
 		"astro-compress": "^2.0.15",
+		"astro-imagetools": "^0.9.0",
 		"astro-seo": "^0.7.6",
 		"eslint": "^8.50.0",
 		"eslint-plugin-astro": "^0.28.0",
@@ -31,7 +32,7 @@
 		"@astrojs/react": "^3.0.3",
 		"@types/react": "^18.2.25",
 		"@types/react-dom": "^18.2.10",
-		"react": "^17.0.2",
+		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
 		"sharp": "^0.32.6"
 	}

@@ -1,5 +1,14 @@
 ---
 import { Image } from '@astrojs/image/components';
+
+const formato_1 = "avif";
+const formato_2 = "webp";
+const formato_3 = "jpg";
+const formato_4 = "png";
+const imagenes = [ 
+  "https://res.cloudinary.com/unidigital/image/upload/v1696605197/software%20completo/promo_isfjtt.png",
+];
+
 ---
-<Image src="https://res.cloudinary.com/unidigital/image/upload/v1696605197/software%20completo/promo_isfjtt.png" alt="descriptive text" 
-            width={1600} height={340} format="avif"/>
+
+            <Image src={imagenes[0]} alt="descriptive text" width={1600} height={340} format={formato_1 || formato_2 || formato_3 || formato_4}/>
