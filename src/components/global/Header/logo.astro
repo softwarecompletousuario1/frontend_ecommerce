@@ -1,10 +1,14 @@
 ---
+import '../../../styles/components/logo.css';
 import { Image } from '@astrojs/image/components';
+const UrlImgLogo = import.meta.env.SECRET_URL_IMG;
 
 ---
 <div class="content_logo">
     <div class="div_logo">
-        <Image src="https://res.cloudinary.com/unidigital/image/upload/v1696542363/software%20completo/logo1_tpy0wq.png" alt="descriptive text" 
-        width={60} height={60}/>
+        <a href="/">
+            <Image src={UrlImgLogo} alt="descriptive text" 
+            width={60} height={60}/>
+        </a>
     </div>
 </div>
