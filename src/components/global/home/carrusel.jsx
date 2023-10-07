@@ -13,9 +13,6 @@ const imagenes = [
   "https://http2.mlstatic.com/D_NQ_827915-MLA72037073590_102023-OO.webp",
   "https://http2.mlstatic.com/D_NQ_741936-MLA72003433921_092023-OO.webp",
 ];
-const imagen = [ 
-  "https://res.cloudinary.com/unidigital/image/upload/v1696605197/software%20completo/promo_isfjtt.png",
-]
 
 function Carrusel() {
   const [posicion, setPosicion] = useState(0);
@@ -37,10 +34,9 @@ function Carrusel() {
   }
   return (
     <div>
-      <img src={imagenes[posicion]} alt="" />
+      <img src={imagenes[posicion]} alt="Imagen del carrusel" />
       <button onClick={anterior}> anterior</button>
       <button onClick={siguiente}> siguiente</button>
-      {/* <Gallery items={optimizedImages} /> */}
     </div>
   );
 }
