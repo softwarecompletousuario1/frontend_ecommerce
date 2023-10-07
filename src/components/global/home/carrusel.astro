@@ -16,15 +16,13 @@ const imagenes = [
 let miVariable = 0;
 
 function cambiarVariableAleatoriamente() {
-  let numeroAleatorio = Math.random();
-  let valorAleatorio = Math.floor(numeroAleatorio * imagenes.length)+1;
-  console.log(valorAleatorio);
-  
-
-  miVariable = valorAleatorio;
+    let numeroAleatorio = Math.random();
+    let valorAleatorio = Math.floor(numeroAleatorio * imagenes.length)+1;
+    console.log(valorAleatorio); 
+    miVariable = valorAleatorio;
 };
 cambiarVariableAleatoriamente();
 ---
-            <Image src={imagenes[miVariable]} id="miImagen" alt={"Imagen del carrusel"} width={1600} height={340}  format={"webp"} fallbackFormat={"jpg"} preload="webp" loading="auto" decoding="auto"/>
+            <Image src={imagenes[miVariable]} id="miImagen" alt={"Imagen del carrusel"} width={1600} height={340}  format={"webp"}  loading="eager" decoding="auto"/>
 
 
