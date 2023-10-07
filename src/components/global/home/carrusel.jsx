@@ -26,12 +26,25 @@ function Carrusel() {
   const [posicion, setPosicion] = useState(0);
 
   const anterior = () => {
-    setPosicion(1)
+    if (posicion <= 0){
+      setPosicion(0);
+    }else{
+      setPosicion(posicion-1);
+    }
+  }
+
+  const siguiente = () => {
+    if (posicion >= imagenes.length-1){
+      setPosicion(imagenes.length-1);
+    }else{
+      setPosicion(posicion+1);
+    }
   }
   return (
     <div>
       <img src={imagenes[posicion]} alt="" />
       <button onClick={anterior}> anterior</button>
+      <button onClick={siguiente}> siguiente</button>
     </div>
   );
 }
