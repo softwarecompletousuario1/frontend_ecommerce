@@ -1,4 +1,5 @@
-import React from 'react';
+import React, {useState} from 'react';
+
 // import { ResponsiveImage, ResponsiveImageSize } from 'react-responsive-image';
 // import Gallery from 'react-image-gallery';
 // import { optimizeImages } from './optimizeImages'; 
@@ -17,12 +18,20 @@ const imagenes = [
   "https://http2.mlstatic.com/D_NQ_741936-MLA72003433921_092023-OO.webp",
 ];
 
+
+
 // const optimizedImages = optimizeImages(images);
 
 function Carrusel() {
+  const [posicion, setPosicion] = useState(0);
+
+  const anterior = () => {
+    setPosicion(1)
+  }
   return (
     <div>
-      <img src={imagenes[0]} alt="" />
+      <img src={imagenes[posicion]} alt="" />
+      <button onClick={anterior}> anterior</button>
     </div>
   );
 }
