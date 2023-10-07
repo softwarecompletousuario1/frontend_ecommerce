@@ -14,6 +14,7 @@ import react from "@astrojs/react";
 
 // https://astro.build/config
 export default defineConfig({
+  hydrate: true,
   site: seoConfig.baseURL,
   integrations: [tailwind({
     config: {
